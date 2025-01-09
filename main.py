@@ -11,7 +11,7 @@ import sys
 load_dotenv("config.env")
 
 # 初始化 ZhipuAI
-api_key = "b6bab7d9eac54d02a072e134978ee72f.XqGZavz80hyL4EdK"
+api_key = os.getenv("API_KEY")
 engine = ZhipuAI(api_key=api_key)
 
 def get_response_from_zhipuai(human_input, history=[]):
